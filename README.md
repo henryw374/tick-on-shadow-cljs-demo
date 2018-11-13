@@ -4,8 +4,8 @@ tick depends on cljsjs libraries and shadow-cljs cannot use these. So to get aro
 this demo:
 
 * depends on the underlying npm packages via package.json
-* includes all of tick cljs dependencies in shadow-cljs.edn
-* uses a little shim to create the namespaces that tick expects
+* includes all of tick cljs dependencies in shadow-cljs.edn - not sure why this is necessary           
+* depends on shadow-cljsjs
 
 ## Usage 
 

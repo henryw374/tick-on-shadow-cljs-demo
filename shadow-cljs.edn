@@ -3,7 +3,8 @@
  
  :dependencies
          [[org.clojure/clojurescript "1.10.238"]
-          [tick "0.4.6-alpha"]
+          [tick "0.4.7-alpha"]
+          [thheller/shadow-cljsjs "0.0.16"]
           [cljs.java-time "0.1.6"]
           [jsr310-tagged-literals "0.1.4"]
           [net.cgrand/macrovich "0.2.0"
