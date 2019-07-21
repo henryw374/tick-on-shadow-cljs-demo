@@ -3,16 +3,20 @@
 tick depends on cljsjs libraries and shadow-cljs cannot use these. So to get around that
 this demo:
 
-* depends on the underlying npm packages via package.json
-* includes all of tick cljs dependencies in shadow-cljs.edn - not sure why this is necessary           
+* depends on the underlying npm packages via package.json           
 * depends on shadow-cljsjs
+
+Note that `shadow-cljsjs` is the only solution untion https://clojure.atlassian.net/browse/CLJS-3138
+is fixed since the js-joda locale package has a scoped name.
 
 ## Usage 
 
 Clone this repo and run
 
-`npm i && shadow-cljs watch app`
+`npm i && npx shadow-cljs node-repl`
 
-## TODO
+at the repl
 
-If someone knows of a better solution please get in touch
+`(require '[tick.alpha.api :as t])`
+
+`(t/today)`

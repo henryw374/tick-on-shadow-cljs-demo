@@ -2,14 +2,9 @@
          ["src" ] 
  
  :dependencies
-         [[org.clojure/clojurescript "1.10.238"]
-          [tick "0.4.13-alpha"]
-          [thheller/shadow-cljsjs "0.0.16"]
-          [cljc.java-time "0.1.0"]
-          [time-literals "0.1.2"]
-          [net.cgrand/macrovich "0.2.0"
-           :exclusions [org.clojure/clojurescript]]
-          ]
+         [[tick "0.4.17-alpha"]
+          ; you need to add this extra dependency! 
+          [thheller/shadow-cljsjs "0.0.16"]]
 
  :builds {:app  {:target     :browser
                  :output-dir "resources/public/js"
