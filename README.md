@@ -1,4 +1,6 @@
-# Demo tick on shadow-cljs 
+*Note*: This demo is only relevant for Tick versions 0.4.23-alpha and earlier. For versions 0.4.24-alpha and later, just add the tick dependency and it will just work. Note that Tick versions 0.4.24-alpha and up require minimum Clojurescript version of 1.10.741
+
+# Demo tick (versions up to 0.4.23-alpha) on shadow-cljs 
 
 tick depends on cljsjs libraries and shadow-cljs cannot use these. So to get around that
 this demo:
